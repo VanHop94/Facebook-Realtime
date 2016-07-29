@@ -1,0 +1,439 @@
+body{
+	background-color: #eee;
+}
+a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.form-control{
+	border-radius: 0px;
+}
+.form-group label{
+	color: #999;
+}
+.form-control:focus{
+	border-width:0px 0px 2px;
+	box-shadow: none;
+	padding: 6px;
+}
+button[disabled], html input[disabled] {
+    cursor: default;
+    opacity: 0.7;
+}
+input[type=checkbox], input[type=radio] {
+    height: 25px;
+    width: 20px;
+    display: block;
+}
+.checkAll{
+	float:left;
+	margin:0px 14px;
+}
+.arrow{
+    text-align: center;
+    line-height: 600px;
+}
+.arrow i{
+    font-size: 36px;
+    color: #2196f3;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li:hover>a {
+    color: #000;
+    background-color: #aaa;
+}
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999999999;
+    opacity: 0.9;
+}
+.spinner {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    -webkit-animation: rotatee 2.0s infinite linear;
+    animation: rotatee 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #0a9fd8;
+    border-radius: 100%;
+    -webkit-animation: bouncee 2.0s infinite ease-in-out;
+    animation: bouncee 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+    top: auto;
+    bottom: 0px;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes rotatee { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes rotatee {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes bouncee {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bouncee {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+/*--Header CSS-----------------------------------------------------------------------*/
+#header-main {
+    background: #333;
+    padding: 0 25px;
+    height: 48px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1104;
+    border-width: 0px;
+    border-radius: 0px;
+}
+.logo-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-right:15px;
+}
+.user-box{
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	position: relative;
+	padding-left: 55px;
+}
+.user-avatar-box {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #fff;
+    background-color: #fff;
+
+    margin-top: 1px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.avatar-image{
+	width: 100%;
+	height: 100%;
+}
+.user-name{
+	font-size: 15px;
+	color: #fff;
+	display: inline-block;
+}
+/*--Main Content CSS-----------------------------------------------------------------------*/
+.rt-card{
+	width: 100%;
+    position: relative;
+    border: none;
+    margin-top: 80px;
+    position: relative;
+    box-shadow: 0 1px 0px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    background: #fff;
+}
+.rt-card-body{
+	padding: 10px;
+	margin:0px 0px 10px; 
+
+}
+.rt-card-heading{
+	width: 100%;
+	font-size: 16px;
+	font-weight: 500;
+	border-bottom-width: 0px;
+	color: #222;
+	margin-bottom: 0px;
+}
+.rt-card-heading-title{
+	padding: 10px 15px;
+	width: 100%;
+	background-color: #888;
+	color: #fff;
+	display: inline-block;
+}
+.rt-card-heading-title.active,.rt-card-heading-title:hover{
+	color: #fff;
+	cursor: pointer;
+	border-right:1px solid #777;
+
+}
+.rt-btn{
+	background: #fff;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12);
+    padding: 2px 5px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    -webkit-transition: all 280ms cubic-bezier(.4,0,.2,1);
+    transition: all 280ms cubic-bezier(.4,0,.2,1);
+    color: #212121;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-appearance: none;
+    display: inline-block;
+    vertical-align: middle;
+    font: 500 14px/25px Roboto,sans-serif;
+}
+.rt-btn:hover{
+	box-shadow: 0 10px 20px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+}
+.rt-btn-danger, .rt-btn-danger:focus{
+    background: #e53935;
+    color: #fff;
+    text-decoration: none;
+}
+.rt-btn-warning, .rt-btn-warning:focus{
+    background: #ffa000;
+    color: #fff;
+    text-decoration: none;
+}
+.rt-btn-primary, .rt-btn-primary:focus{
+    background: #2196f3;
+    color: #fff;
+    text-decoration: none;
+}
+.rt-btn-default, .rt-btn-default:focus{
+    background: #888;
+    color: #fff;
+    text-decoration: none;
+}
+.alert-box{
+	margin-bottom: 10px;
+	color: #e53935;
+}
+.modal-dialog {
+    margin: 100px auto;
+    border-radius: 0px;
+}
+/*--Login Page CSS-----------------------------------------------------------------------*/
+.login-page{
+    margin-top: 100px;
+    background-color: #fff;
+    box-shadow: 0 1px 0px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+}
+.login-page .login-page-content {
+    padding:25px 35px 50px;
+}
+.login-page .user-avatar {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    background-image: url(../img/user.png);
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,.085);
+    background-position: 50% 1px;
+}
+.login-page .login-page-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-login-page{
+	width: 100%;
+   
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    min-height: 46px;
+    min-width: 70px;
+    padding: 2px 16px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    -webkit-transition: all 280ms cubic-bezier(.4,0,.2,1);
+    transition: all 280ms cubic-bezier(.4,0,.2,1);
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-appearance: none;
+    display: inline-block;
+    vertical-align: middle;
+    font: 500 14px/31px Roboto,sans-serif;
+    background: #2196f3;
+    color: #fff;
+    line-height: 42px;
+    font-size: 16px;
+}
+.btn-login-page:hover{
+	box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
+	background: #2196f3;
+}
+/*--Admin Manegerment Page CSS-----------------------------------------------------------------------*/
+#admin-managerment thead tr td{
+	font-size: 16px;
+	font-weight: 600;
+}
+#admin-managerment tr td{
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+}
+#admin-managerment tr td.action{
+	width: 100px;
+
+}
+#admin-managerment .rt-btn{
+	min-height: 25px;
+	font: 500 12px/25px Roboto,sans-serif;
+	padding: 0px 5px;
+}
+.add-user-button{
+	margin: 0px 0px 10px; 
+}
+.add-user{
+	margin: 10px 0px 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+}
+.add-user label{
+	color: #999;
+}
+#admin-managerment  .sort,#admin-managerment  .sort:hover{
+	text-decoration: none;
+	color: #222;
+}
+/*--Block Page CSS-----------------------------------------------------------------------*/
+ #block-page .rt-card{
+ 	margin-top: 10px;
+ }
+ #block-page .post-monitor{
+ 	margin-top: 70px;
+ }
+.fb-user-box{
+	padding-left: 55px;
+	height: 70px;
+	position: relative;
+}
+.fb-comment-box{
+	position: relative;
+	padding-left: 70px;
+	min-height: 80px;
+}
+.fb-user-box.style-2{
+	width: 70px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+.fb-user-box-avatar{
+	width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.fb-user-box-avatar.style-2{
+	width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+.fb-user-name{
+	font-size: 16px;
+	font-weight: 500;
+	color: #222;
+}
+.fb-user-name:hover{
+	color: #222;
+}
+.fb-user-name.style-2{
+	font-size: 11px;
+	font-weight: 500;
+	color: #222;
+	position: absolute;
+    top: 55px;
+    left: 0;
+    text-align: left;
+}
+.fb-comment-box-comtent{
+	text-align: left;
+	text-align: justify;
+}
+.block-table .action{
+	width: 35px;
+}
+.block-table tbody tr{
+	width:100%;
+}
+.block-table thead tr td{
+	font-size: 16px;
+	font-weight: 600;
+}
+.block-table tr td{
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc !important;
+}
+.block-table .rt-btn{
+	min-height: 25px;
+	font: 500 12px/25px Roboto,sans-serif;
+	padding: 0px 5px;
+	min-width: 35px;
+}
+.check_status0{
+	background-color: #f5f5f5;
+	opacity: 0.5;
+}
+.check_status1{
+	background-color: #E2F5F7;
+	opacity: 1;
+}
+/*--List Post Page CSS-----------------------------------------------------------------------*/
+#list-post .fb-comment-box{
+	padding-left: 0px;
+	min-height: 115px;
+}
+#list-post .fb-user-box-avatar{
+	width: 100%;
+	height: 100%;
+}
+#list-post .fb-user-name{
+	position: absolute;
+	top:110px;
+	left: 0px;
+	text-align: left;
+}
+/* div.tagsinput{
+	padding:0px!important;
+} */
+

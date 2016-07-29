@@ -1,0 +1,60 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="Datasection" />
+<link href="images/favicon.png"
+	th:href="@{/resources/images/favicon.png}" rel="shortcut icon" />
+
+<title>500</title>
+
+<!-- Bootstrap core CSS -->
+<link href="resources/bs3/css/bootstrap.min.css"
+	th:href="@{/resources/bs3/css/bootstrap.min.css}" rel="stylesheet" />
+<link href="resources/css/bootstrap-reset.css"
+	th:href="@{/resources/css/bootstrap-reset.css}" rel="stylesheet" />
+<!--external css-->
+<link href="resources/font-awesome/css/font-awesome.css"
+	th:href="@{/resources/font-awesome/css/font-awesome.min.css}"
+	rel="stylesheet" />
+<!-- Custom styles for this template -->
+<link href="resources/css/style.css"
+	th:href="@{/resources/css/style.css}" rel="stylesheet" />
+<link href="resources/css/style-responsive.css"
+	th:href="@{/resources/css/style-responsive.css}" rel="stylesheet" />
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="body-500">
+
+	<div class="error-head"></div>
+
+	<div class="container ">
+
+		<section class="error-wrapper text-center">
+			<h1>
+				<img th:src="@{/images/500.png}" src="images/500.png" alt="" />
+			</h1>
+			<div class="error-desk">
+				<h2>OOOPS!!!</h2>
+				<p class="nrml-txt-alt">Something went wrong.</p>
+				<p>
+					Why not try refreshing you page? Or you can <a href="https://www.facebook.com/iiplus.vn"
+						class="sp-link">contact our support</a> if the problem persists.
+				</p>
+			</div>
+			<a th:href="@{/}" class="back-btn"><i class="fa fa-home"></i>
+				Back To Home</a>
+		</section>
+
+	</div>
+
+
+</body>
+</html>
